@@ -1,0 +1,14 @@
+﻿@model WebApplication1.Models.project
+
+<form action="AddEdit" method="post">
+    <input asp-for="Id" hidden />
+    <div class="form-floating">
+        <input asp-for="Proj_Name" class="form-control" />
+        <label>Project Name</label>
+    </div>
+    <div class="form-floating">
+        <input asp-for="Proj_Description" class="form-control" />
+        <label>Project Description</label>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit</button>
+</form>

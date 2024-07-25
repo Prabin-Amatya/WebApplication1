@@ -1,0 +1,24 @@
+﻿@model IEnumerable<WebApplication1.Models.project>
+
+<h3>Project Information</h3>
+
+ <a class="btn btn-primary" asp-action="AddEdit">Add</a>
+
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var items in Model)
+        {
+            <tr>
+                <td>@items.Proj_Name</td>
+                <td>@items.Proj_Description</td>
+            </tr>
+        }
+    </tbody>
+</table>
